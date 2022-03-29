@@ -11,4 +11,8 @@ func main() {
 	spending = append(spending, 7.0)
 	fmt.Println(len(spending))
 	fmt.Println(cap(spending))
+
+	spending = spending[:len(spending)-1]
+	fmt.Println(len(spending))
+	fmt.Println(cap(spending)) // capacity will not go lower
 }
